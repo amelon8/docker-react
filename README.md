@@ -17,9 +17,14 @@ docker-compose ps
 docker-compose exec react sh
 ```
 
-* Once inside the container, you can create a new app ('my-app').
+* Once inside the container, you can create a new app ('my-app') with base template.
 ```
 npx create-react-app my-app
+```
+
+* Or you can also create a new app ('my-app') with typescript template.
+```
+npx create-react-app my-app --template typescript
 ```
 
 * Once app is created, you can run it.
