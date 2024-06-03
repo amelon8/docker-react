@@ -30,5 +30,8 @@ npm start
 
 * On your local machine's browser, enter: http://localhost:8000
 
-
+* To stop the container.
+```
+docker-compose down
+```
 
