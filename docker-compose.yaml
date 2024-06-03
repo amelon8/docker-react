@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+  react:
+    image: amelon/react:1
+    container_name: react-01
+    restart: always
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+#    environment:
+#      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    volumes:
+      - ${PWD}/app:/usr/src/app
+    working_dir: /usr/src/app
+#    entrypoint:
+#      - /bin/bash
+
+
